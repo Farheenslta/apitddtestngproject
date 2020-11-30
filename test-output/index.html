@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>F:\Automation_PracticePrograms\com.tdd.api\testNGCRUDWithAllTestProperties.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 2 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method4">method4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method6">method6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method1">method1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method10">method10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method11">method11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method12">method12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method13">method13</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method3">method3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method5">method5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method5">method5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method5">method5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method5">method5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method5">method5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method7">method7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method8">method8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestNGCRUDWithAllTestProperties" hash-for-method="method9">method9</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.TestNGCRUDWithAllTestProperties</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="method4">
+                  </a> <!-- method4 -->
+                  <span class="method-name">method4</span>
+                  <div class="stack-trace">org.testng.internal.thread.ThreadTimeoutException: Method tests.TestNGCRUDWithAllTestProperties.method4() didn&apos;t finish within the time-out 3000
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method6">
+                  </a> <!-- method6 -->
+                  <span class="method-name">method6</span>
+                  <div class="stack-trace">org.testng.internal.thread.ThreadTimeoutException: Method tests.TestNGCRUDWithAllTestProperties.method6() didn&apos;t finish within the time-out 5000
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TestNGCRUDWithAllTestProperties</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="method1">
+                  </a> <!-- method1 -->
+                  <span class="method-name">method1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method10">
+                  </a> <!-- method10 -->
+                  <span class="method-name">method10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method11">
+                  </a> <!-- method11 -->
+                  <span class="method-name">method11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method12">
+                  </a> <!-- method12 -->
+                  <span class="method-name">method12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method13">
+                  </a> <!-- method13 -->
+                  <span class="method-name">method13</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method3">
+                  </a> <!-- method3 -->
+                  <span class="method-name">method3</span>
+                  <em>
+(This attribute tells you about the method)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method5">
+                  </a> <!-- method5 -->
+                  <span class="method-name">method5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method5">
+                  </a> <!-- method5 -->
+                  <span class="method-name">method5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method5">
+                  </a> <!-- method5 -->
+                  <span class="method-name">method5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method5">
+                  </a> <!-- method5 -->
+                  <span class="method-name">method5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method5">
+                  </a> <!-- method5 -->
+                  <span class="method-name">method5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method7">
+                  </a> <!-- method7 -->
+                  <span class="method-name">method7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method8">
+                  </a> <!-- method8 -->
+                  <span class="method-name">method8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method9">
+                  </a> <!-- method9 -->
+                  <span class="method-name">method9</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\Automation_PracticePrograms\com.tdd.api\testNGCRUDWithAllTestProperties.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;@Test Annotatoin properties&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.TestNGCRUDWithAllTestProperties&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;method2&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.TestNGCRUDWithAllTestProperties --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- @Test Annotatoin properties --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">@Test Annotatoin properties (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">realtest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">method10</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">method11</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regressiontest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">method12</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoketest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">method10</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">method9</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'method6')
+data.setCell(0, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(0, 3, 5017);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'method4')
+data.setCell(1, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(1, 3, 3025);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'method1')
+data.setCell(2, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(2, 3, 39);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'method7')
+data.setCell(3, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(3, 3, 10);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'method5')
+data.setCell(4, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(4, 3, 8);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'method5')
+data.setCell(5, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(5, 3, 6);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'method3')
+data.setCell(6, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(6, 3, 5);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'method5')
+data.setCell(7, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(7, 3, 4);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'method11')
+data.setCell(8, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(8, 3, 4);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'method5')
+data.setCell(9, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(9, 3, 4);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'method9')
+data.setCell(10, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(10, 3, 4);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'method8')
+data.setCell(11, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(11, 3, 4);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'method5')
+data.setCell(12, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(12, 3, 4);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'method10')
+data.setCell(13, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(13, 3, 4);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'method13')
+data.setCell(14, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(14, 3, 3);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'method12')
+data.setCell(15, 2, 'tests.TestNGCRUDWithAllTestProperties')
+data.setCell(15, 3, 3);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">method1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">priority attribute utilization</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">method3</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">description attribute describes the finctionality of your method</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TestNGCRUDWithAllTestProperties</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">method2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TestNGCRUDWithAllTestProperties</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">method1</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method3</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">method4</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method5</span>
+                <span class="method-start">3120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method5</span>
+                <span class="method-start">3137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method5</span>
+                <span class="method-start">3150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method5</span>
+                <span class="method-start">3159 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method5</span>
+                <span class="method-start">3166 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">method6</span>
+                <span class="method-start">3175 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method7</span>
+                <span class="method-start">8214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method8</span>
+                <span class="method-start">8243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method9</span>
+                <span class="method-start">8252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method10</span>
+                <span class="method-start">8260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method11</span>
+                <span class="method-start">8269 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method12</span>
+                <span class="method-start">8277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method13</span>
+                <span class="method-start">8287 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

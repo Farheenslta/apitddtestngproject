@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  CRUD Operations via Parameters1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CRUD Operations via Parameters1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 30 23:43:35 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11078 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestNGCRUDViaParameters.createAPost()'><b>createAPost</b><br>Test class: tests.TestNGCRUDViaParameters<br>Parameters: 11, 101, vadi tala 1, vadi toka 1<br/>
+<a href="#Output-1533662221" onClick='toggleBox("Output-1533662221", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1533662221" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1533662221">
+Post created succesfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestNGCRUDViaParameters@1786dec2</td></tr>
+<tr>
+<td title='tests.TestNGCRUDViaParameters.deleteAPost()'><b>deleteAPost</b><br>Test class: tests.TestNGCRUDViaParameters<br/>
+<a href="#Output-1655242052" onClick='toggleBox("Output-1655242052", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1655242052" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1655242052">
+Post deleted succesfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestNGCRUDViaParameters@1786dec2</td></tr>
+<tr>
+<td title='tests.TestNGCRUDViaParameters.getAllPosts()'><b>getAllPosts</b><br>Test class: tests.TestNGCRUDViaParameters<br/>
+<a href="#Output-1650332494" onClick='toggleBox("Output-1650332494", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1650332494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1650332494">
+All posts resource working correctly<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>tests.TestNGCRUDViaParameters@1786dec2</td></tr>
+<tr>
+<td title='tests.TestNGCRUDViaParameters.getSpecificPost()'><b>getSpecificPost</b><br>Test class: tests.TestNGCRUDViaParameters<br/>
+<a href="#Output-998283025" onClick='toggleBox("Output-998283025", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-998283025" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-998283025">
+Specific post resource working correctly<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestNGCRUDViaParameters@1786dec2</td></tr>
+<tr>
+<td title='tests.TestNGCRUDViaParameters.updateAPost()'><b>updateAPost</b><br>Test class: tests.TestNGCRUDViaParameters<br/>
+<a href="#Output-1458748394" onClick='toggleBox("Output-1458748394", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1458748394" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1458748394">
+Post updated succesfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestNGCRUDViaParameters@1786dec2</td></tr>
+</table><p>
+</body>
+</html>
